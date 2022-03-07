@@ -37,7 +37,7 @@ public:
 
     shared_ptr_toy& operator= (const shared_ptr_toy& other){
         if (this == &other) return *this;
-        if (m_toy != nullptr){
+        if (this != nullptr){
             delete m_toy;
             delete m_counter;
         }
